@@ -19,4 +19,64 @@ let map1 = new SumlabLibJSapi({
     zoom: 10
 });
 ```
+4. Настройте карту:
+Добавьте метки по адресу
+```
+map1.addPointsToAddress({
+    // Тип меток: Icon, StretchyIcon, DotIcon, CircleIcon, CircleDotIcon
+    type: 'StretchyIcon',
+    // Цвета меток: blue, red, darkOrange, night, darkBlue, pink, gray, brown, darkGreen, violet, black, yellow, green, orange, lightBlue, olive
+    color: 'blue',
+},[
+    {
+        // Адрес метки
+        address: 'Москва, улица Казакова, 8с1',
+        // Заголовок всплывающего сообщения
+        balloonTitle: 'Заголовок всплывающего сообщения',
+        // Описание всплывающего сообщения
+        balloonDescription: 'Описание всплывающего сообщения',
+        // Текст внутри метки
+        iconContent: 'Москва, улица Казакова, 8с1',
+        // Текст возле метки
+        iconCaption: 'Текст возле метки',
+    }
+]);
+```
+Добавьте метки по координатам:
+```
+map1.addPointsToCoords({
+    // Тип меток: Icon, StretchyIcon, DotIcon, CircleIcon, CircleDotIcon
+    type: 'StretchyIcon',
+    // Цвета меток: blue, red, darkOrange, night, darkBlue, pink, gray, brown, darkGreen, violet, black, yellow, green, orange, lightBlue, olive
+    color: 'blue',
+},[
+    {
+        // Координаты метки
+        coords: [55.9, 37.5],
+        // Заголовок всплывающего сообщения
+        balloonTitle: 'Заголовок всплывающего сообщения',
+        // Описание всплывающего сообщения
+        balloonDescription: 'Описание всплывающего сообщения',
+        // Текст внутри метки
+        iconContent: '55.9, 37.5',
+        // Текст возле метки
+        iconCaption: 'Текст возле метки',
+    },{
+        // Координаты метки
+        coords: [55.2, 36.1],
+        // Заголовок всплывающего сообщения
+        balloonTitle: 'Заголовок всплывающего сообщения',
+        // Описание всплывающего сообщения
+        balloonDescription: 'Описание всплывающего сообщения',
+        // Текст внутри метки
+        iconContent: '55.2, 36.1',
+        // Текст возле метки
+        iconCaption: 'Текст возле метки',
+    }
+]);
+```
+Удалите карту:
+```
+map1.destroyMap();
+```
 С готовыми примерами можете ознакомиться в директории Examples.
