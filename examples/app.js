@@ -20,7 +20,7 @@ map1.addPointsToAddress({
     // Тип меток: Icon, StretchyIcon, DotIcon, CircleIcon, CircleDotIcon
     type: 'StretchyIcon',
     // Цвета меток: blue, red, darkOrange, night, darkBlue, pink, gray, brown, darkGreen, violet, black, yellow, green, orange, lightBlue, olive
-    color: 'blue',
+    color: 'darkBlue',
 },[
     {
         // Адрес метки
@@ -35,13 +35,13 @@ map1.addPointsToAddress({
         iconCaption: 'Текст возле метки',
     },{
         // Адрес метки
-        address: 'Москва, улица Тверская, 10',
+        address: 'Москва, Кутузовский проспект, 67',
         // Заголовок всплывающего сообщения
         balloonTitle: 'Заголовок всплывающего сообщения',
         // Описание всплывающего сообщения
         balloonDescription: 'Описание всплывающего сообщения',
         // Текст внутри метки
-        iconContent: 'Москва, улица Тверская, 10',
+        iconContent: 'Москва, Кутузовский проспект, 67',
         // Текст возле метки
         iconCaption: 'Текст возле метки',
     }
